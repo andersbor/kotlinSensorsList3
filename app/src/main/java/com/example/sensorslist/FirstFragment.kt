@@ -28,7 +28,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val sensorManager = requireActivity().getSystemService(SENSOR_SERVICE) as SensorManager
-        val allSensors: MutableList<Sensor> = sensorManager.getSensorList(Sensor.TYPE_ALL)
+        val allSensors: List<Sensor> = sensorManager.getSensorList(Sensor.TYPE_ALL)
 
         Log.d("APPLE", allSensors.toString())
 
